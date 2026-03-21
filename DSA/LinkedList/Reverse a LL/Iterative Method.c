@@ -35,7 +35,7 @@ void Reverse(){
     }
     head=prev; //after Reverse the LL, head is change 
     //Void Print ()
-     struct Node *temp=head;
+    struct Node *temp=head;
     while(temp!=NULL){
         printf("%d ",temp->data);
         temp=temp->next;
@@ -43,7 +43,8 @@ void Reverse(){
 }
 int main(){
     head=NULL;
-    Insert(1);Insert(2);Insert(3);Insert(4);
+    Insert(1);Insert(2);
+    Insert(3);Insert(4);
     Reverse();
     return 0;
 }
