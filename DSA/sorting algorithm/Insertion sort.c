@@ -14,7 +14,7 @@ void Insertionsort(int A[], int n)
     //Start with i=1 
     for (i=1;i<n-1;i++)
     {
-        printf("iteration %d\n",i+1);
+        printf("iteration %d\n",i);
         value=A[i];
         hole=i;
         while(hole>0 && A[hole-1]>value)
@@ -27,8 +27,6 @@ void Insertionsort(int A[], int n)
     }
     
 }
-    
-    
 int main(){
     int i,n,A[100];
     printf("How many Number :");
