@@ -23,6 +23,14 @@ void Insert (int data) // Insert at end
     }
     temp->next=newnode;
 }
+void Print() {
+    struct Node* temp;
+    temp=head;
+    while (temp!=NULL){
+        printf("%d ",temp->data);
+        temp=temp->next;
+    }
+}
 void Delete(int position){
     struct Node *temp=head;
     int i;
@@ -39,14 +47,6 @@ void Delete(int position){
         temp->next=temp->next->next;
        // free(temp->next);wrong,because we already loss the reference
         free(wlr);
-}
-void Print() {
-    struct Node* temp;
-    temp=head;
-    while (temp!=NULL){
-        printf("%d ",temp->data);
-        temp=temp->next;
-    }
 }
 int main(){
     head=NULL;
