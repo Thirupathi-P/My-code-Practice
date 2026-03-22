@@ -42,10 +42,10 @@ void Delete(int position){
     for(i=0;i<position-2;i++){
         temp=temp->next;
     }
-     struct Node *wlr;   //wlr=without loss the reference
+     struct Node *wlr;   //wlr = without loss the reference.
         wlr=temp->next;
         temp->next=temp->next->next;
-       // free(temp->next);wrong,because we already loss the reference
+       // free(temp->next);This is wrong,because we already loss the reference.
         free(wlr);
 }
 int main(){
