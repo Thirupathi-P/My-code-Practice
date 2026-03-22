@@ -21,6 +21,7 @@ void Print() {
         printf("%d ",temp->data);
         temp=temp->next;
     }
+      printf("\n");
 }
 int main(){
     head=NULL;
