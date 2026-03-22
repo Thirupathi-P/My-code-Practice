@@ -23,6 +23,14 @@ void Insert(int x) // Insert at End
     }
     temp->next=newnode;
 }
+void Print(){
+    struct Node *temp=head;
+    while(temp!=NULL){
+        printf("%d ",temp->data);
+        temp=temp->next;
+    }
+    printf("\n");
+}
 void Reverse(){
     struct Node *current,*prev,*next;
     current =head;
@@ -34,12 +42,7 @@ void Reverse(){
         current=next;
     }
     head=prev; //after Reverse the LL, head is change 
-    //Void Print ()
-    struct Node *temp=head;
-    while(temp!=NULL){
-        printf("%d ",temp->data);
-        temp=temp->next;
-    }
+    Print();
 }
 int main(){
     head=NULL;
