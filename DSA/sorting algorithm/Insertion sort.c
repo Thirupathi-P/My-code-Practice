@@ -25,7 +25,6 @@ void Insertionsort(int A[], int n)
         A[hole]=value;
         Print(A,n);
     }
-    
 }
 int main(){
     int i,n,A[100];
