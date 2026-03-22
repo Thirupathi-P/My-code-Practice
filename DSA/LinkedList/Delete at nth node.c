@@ -30,6 +30,7 @@ void Print() {
         printf("%d ",temp->data);
         temp=temp->next;
     }
+      printf("\n");
 }
 void Delete(int position){
     struct Node *temp=head;
@@ -52,7 +53,6 @@ int main(){
     head=NULL;
     Insert(1);Insert(2);Insert(3);
     Print();
-    printf("\n");
     Delete (2);
     Print();
     return 0;
