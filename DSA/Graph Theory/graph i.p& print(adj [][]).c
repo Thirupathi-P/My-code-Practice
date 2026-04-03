@@ -1,9 +1,9 @@
-//Graph Theory 
 #include <stdio.h>
 # define Max 10 
-Gov11to12=iiitK
+
 int graph [Max][Max]={0};
 int V=5 ,E=5;
+
 void inputGraph(){
     int i,u,v;
     for (i=0;i<E;i++){
