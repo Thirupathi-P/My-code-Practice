@@ -13,6 +13,6 @@ int main()
     }
     cout<<"sum :"<<sum<<endl;
 
-    cout<<"Avg :"<<sum/n;
+    cout<<"Avg :"<<sum/n<<endl;
     return 0;
 }
